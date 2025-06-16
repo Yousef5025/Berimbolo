@@ -1,0 +1,73 @@
+:root {
+    --main-color: white;
+    --second-color: #FF6500;
+    --third-color: #383848;
+}
+
+header .navbar .nav-link {
+    color: var(--main-color);
+}
+
+header .navbar .nav-link:hover {
+    border-bottom: 2px solid var(--second-color);
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+header #main .btn{
+    border: #FF6500 solid 1px;
+    color: #FF6500;
+    padding: 15px 30px;
+}
+
+header #main .btn:hover{
+    border: transparent;
+    color: white;
+    background-color: #FF6500;
+}
+
+#about #about-btn a:hover{
+    background-color: #FF6500;
+    color: #383848;
+    border: transparent;
+}
+
+#contact button:hover{
+    background-color: #FF6500;
+    border: transparent;
+}
+
+
+@media (max-width : 613px) {
+    #main h1{
+        font-size: 15px;
+    }
+
+    #about #about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content  : center;
+        text-align: center;
+    }
+    #about #about-btn{
+        display: flex; 
+        justify-content: center;
+    }
+    #about #about-img{
+        width: 100%;
+    }
+}
